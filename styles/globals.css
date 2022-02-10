@@ -1,10 +1,10 @@
-
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100%;
 }
 
 a {
@@ -15,9 +15,31 @@ a {
 * {
   box-sizing: border-box;
 }
-.app{
+
+.app {
   background-color: #272424;
-  min-height: 100vh;
   color: white;
   font-size: larger;
+}
+
+.name {
+  font-size: 4rem;
+}
+
+.hero {
+  overflow: hidden;
+}
+
+.projectCard {
+  background-color: #3a3939;
+  height: 100%;
+  border-radius: 0;
+  transition: all linear .3s;
+}
+
+.projectCard:hover {
+  background-color: blue;
+  cursor: pointer;
+  transform: scale(1.12);
+  box-shadow: black;
 }
