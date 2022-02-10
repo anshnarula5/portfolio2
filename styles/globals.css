@@ -37,18 +37,25 @@ a {
   transition: all linear .3s;
 }
 
-.text{
+.text {
   display: none;
 }
 
 .projectCard:hover {
-  background-color: blue;
-  cursor: pointer;
-  transform: scale(1.1);
+  background-color: #3a3939;
+  /* transform: scale(1.1); */
   box-shadow: black;
   transition: all linear .3s;
 }
-.projectCard:hover  .text {
+
+.projectCard:hover .text {
   display: block;
   transition: all linear .3s;
+}
+.link {
+  color: rgb(114, 114, 114);
+  text-decoration: none;
+}
+.link:hover {
+  color: white;
 }
