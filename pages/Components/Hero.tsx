@@ -1,4 +1,3 @@
-import Three from "../Three";
 
 const Hero = () => {
   return (
@@ -10,7 +9,8 @@ const Hero = () => {
         I am a passionate full stack developer with background knowledge of MERN
         stack with redux.
       </div>
-      <Three />
+      <a href = "#projects">Projects</a>
+      <a href = "#tech">Tech</a>
     </div>
   );
 };

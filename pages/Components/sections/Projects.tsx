@@ -1,15 +1,12 @@
 import React from 'react'
-import ProjectCard from '../ProjectCard'
+import EasyBuy from '../Projects/EasyBuy'
+import Instagram from '../Projects/Instagram'
 
 const Projects = () => {
   return (
-    <div className="right  pt-5">
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+    <div className="right  pt-5" id = "projects">
+      <EasyBuy />
+      <Instagram />
     </div>
   )
 }
