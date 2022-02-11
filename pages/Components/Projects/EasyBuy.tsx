@@ -11,8 +11,7 @@ const EasyBuy = () => {
   return (
     <div
       className="projectCard py-3 px-4 mb-3"
-      onMouseEnter={() => setShow(true)}
-      onMouseLeave={() => setShow(false)}
+      onClick={() => setShow(prev => !prev)}
       >
           <p>Web</p>
       <h2>Easy-Buy</h2>

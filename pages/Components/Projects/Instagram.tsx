@@ -12,10 +12,9 @@ const Instagram = () => {
   return (
     <div
       className="projectCard py-3 px-4 mb-3"
-      onMouseEnter={() => setShow(true)}
-      onMouseLeave={() => setShow(false)}
-      >
-          <p>Web</p>
+      onClick={() => setShow((prev) => !prev)}
+    >
+      <p>Web</p>
       <h2>Instagram</h2>
       <p>
         An application where users can add posts, like other's post, follow
@@ -23,7 +22,7 @@ const Instagram = () => {
       </p>
       <Collapse in={show}>
         <div id="example-collapse-text">
-          <Carousel variant="dark"  className="px-5 py-2">
+          <Carousel variant="dark" className="px-5 py-2">
             <Carousel.Item>
               <Image
                 src={insta1}

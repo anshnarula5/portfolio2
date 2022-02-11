@@ -42,16 +42,13 @@ a {
 }
 
 .projectCard:hover {
-  background-color: #3a3939;
-  /* transform: scale(1.1); */
+  background-color: #536878;
+  cursor: pointer;
   box-shadow: black;
-  transition: all linear .3s;
+  transition: all linear .15s;
 }
 
-.projectCard:hover .text {
-  display: block;
-  transition: all linear .3s;
-}
+
 .link {
   color: rgb(114, 114, 114);
   text-decoration: none;
@@ -62,7 +59,7 @@ a {
 
 .active{
   color: white;
-  font-size: larger;
+  font-size: x-large;
 }
 
 .techCard{

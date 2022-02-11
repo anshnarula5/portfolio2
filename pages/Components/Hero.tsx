@@ -1,14 +1,16 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
   const [url, setUrl] = useState<String>("");
+  const [toggle, setToggle] = useState<Boolean>(false);
   const router = useRouter();
   useEffect(() => {
     const path = router.asPath;
-    console.log(router)
     setUrl(path);
-  }, [router.asPath]);
+    console.log(path);
+  }, [router.asPath, toggle]);
   return (
     <div className="hero sticky-top pt-5">
       <h1 className="name ">
@@ -19,24 +21,30 @@ const Hero = () => {
         stack with redux.
       </div>
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <a
-          href="#projects"
-          className={`link my-1 ${url === "/#projects" && "active"}`}
-        >
-          Projects
-        </a>
-        <a
-          href="#tech"
-          className={`link my-1 ${url === "/#tech" && "active"}`}
-        >
-          Tech
-        </a>
-        <a
-          href="#blogs"
-          className={`link my-1 ${url === "/#blogs" && "active"}`}
-        >
-          Blogs
-        </a>
+        <Link href="#projects">
+          <a
+            className={`link my-1 ${url === "/#projects" && "active"}`}
+            onClick={() => setToggle((prev) => !prev)}
+          >
+            Projects
+          </a>
+        </Link>
+        <Link href="#tech">
+          <a
+            className={`link my-1 ${url === "/#tech" && "active"}`}
+            onClick={() => setToggle((prev) => !prev)}
+          >
+            Tech
+          </a>
+        </Link>
+        <Link href="#blogs">
+          <a
+            className={`link my-1 ${url === "/#blogs" && "active"}`}
+            onClick={() => setToggle((prev) => !prev)}
+          >
+            Blogs
+          </a>
+        </Link>
       </div>
     </div>
   );
