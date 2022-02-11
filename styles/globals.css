@@ -52,6 +52,7 @@ a {
 .link {
   color: rgb(114, 114, 114);
   text-decoration: none;
+  transition: all linear .15s;
 }
 .link:hover {
   color: white;
@@ -60,6 +61,7 @@ a {
 .active{
   color: white;
   font-size: x-large;
+
 }
 
 .techCard{
@@ -67,6 +69,12 @@ a {
   width: 23%;
   padding-inline: 2rem;
   padding-block: 1.1rem;
+  transition: background-color linear .15s;
+}
+
+.techCard:hover{
+  background-color: #536878;
+  cursor: pointer;
 }
 @media screen and (max-width : 768px) {
   .techCard{
@@ -74,4 +82,16 @@ a {
     width: 30%;
     padding: .4rem;
   }
+}
+
+.button{
+  background-color: #272424 !important;
+  padding: .75rem;
+  margin-block: 1rem !important;
+  display: inline-block !important;
+  color: white;
+  text-decoration: none;
+}
+.button:hover{
+  color: white;
 }

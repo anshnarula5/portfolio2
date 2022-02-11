@@ -9,12 +9,36 @@ import insta4 from "/display/instagram-4.jpg";
 
 const Instagram = () => {
   const [show, setShow] = useState(false);
+  const [on, setOn] = useState<Boolean>(false);
+
   return (
     <div
-      className="projectCard py-3 px-4 mb-3"
-      onClick={() => setShow((prev) => !prev)}
+    className="projectCard py-3 px-4 mb-3"
+    onClick={() => {
+      if (!on) {
+        setShow(true);
+        setOn(true);
+      }
+    }}
+  >
+    <div
+      className="d-flex justify-content-between align-items-center"
+      onClick={() => {
+        setShow(false);
+        setOn(false);
+      }}
     >
-      <p>Web</p>
+      <p>Mobile</p>
+      <p
+        onClick={() => {
+          setShow(false);
+          setOn(false);
+        }}
+        className="fs-3"
+      >
+        {show && <i className="fa-solid fa-xmark"></i>}
+      </p>
+    </div>
       <h2>Instagram</h2>
       <p>
         An application where users can add posts, like other's post, follow

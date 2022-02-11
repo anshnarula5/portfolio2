@@ -12,16 +12,34 @@ import m7 from "/display/movie-7.jpg";
 
 const Movies = () => {
   const [show, setShow] = useState(false);
+  const [on, setOn] = useState<Boolean>(false);
   return (
-    <div className="projectCard py-3 px-4 mb-3" onClick={() => setShow(prev => !prev)}>
+    <div
+      className="projectCard py-3 px-4 mb-3"
+      onClick={() => {
+        if (!on) {
+          setShow(true);
+          setOn(true);
+        }
+      }}
+    >
       <div
         className="d-flex justify-content-between align-items-center"
-        // onClick={() => setShow(false)}
+        onClick={() => {
+          setShow(false);
+          setOn(false);
+        }}
       >
         <p>Mobile</p>
-        {/* <p onClick={() => setShow(prev => !prev)} className="fs-3">
-          <i className="fa-solid fa-xmark"></i>
-        </p> */}
+        <p
+          onClick={() => {
+            setShow(false);
+            setOn(false);
+          }}
+          className="fs-3"
+        >
+          {show && <i className="fa-solid fa-xmark"></i>}
+        </p>
       </div>
       <h2>Cinepedia</h2>
       <p>
