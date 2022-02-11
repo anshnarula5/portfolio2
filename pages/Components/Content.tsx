@@ -7,7 +7,11 @@ const Content = () => {
   return (
     <>
     <Projects />
-    <Tech /></>
+      <Tech />
+      <div className="gradient fixed-bottom">
+        
+    </div>
+    </>
   );
 };
 
