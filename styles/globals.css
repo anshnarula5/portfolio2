@@ -87,17 +87,21 @@ a {
 }
 
 .button {
-  background-color: #272424 !important;
-  padding: .75rem;
+  padding: .6rem;
+  padding-inline: 1rem;
   margin-block: 1rem !important;
   display: inline-block !important;
   color: white;
   text-decoration: none;
   margin-right: 1rem;
+  border: .1rem solid  #272424;
+  transition: .2s linear;
 }
-
-.button:hover {
+.button:hover,
+.button:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
   color: white;
+  background-color: #272424 ;
 }
 
 .gradient {

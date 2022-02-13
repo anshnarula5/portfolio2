@@ -16,7 +16,7 @@ function TechCard({ img, name }: { img: any, name : any }) {
         alt=""
         layout="responsive"
       />
-      <p className="text-center mt-1">{name}</p>
+      <span className="text-center mt-2">{name}</span>
     </div>
   );
 };
