@@ -10,24 +10,23 @@ import easy4 from "/display/easy-4.jpg";
 const EasyBuy = () => {
   const [show, setShow] = useState(false);
   const [on, setOn] = useState<Boolean>(false);
-
   return (
     <div
-    className="projectCard py-3 px-4 mb-3"
-    onClick={() => {
-      if (!on) {
-        setShow(true);
-        setOn(true);
-      }
-    }}
-  >
-    <div
-      className="d-flex justify-content-between align-items-center"
+      className="projectCard py-3 px-4 mb-3"
       onClick={() => {
-        setShow(false);
-        setOn(false);
+        if (!on) {
+          setShow(true);
+          setOn(true);
+        }
       }}
     >
+      <div
+        className="d-flex justify-content-between align-items-center"
+        onClick={() => {
+          setShow(false);
+          setOn(false);
+        }}
+      >
         <p>Mobile</p>
         <p
           onClick={() => {
@@ -46,7 +45,7 @@ const EasyBuy = () => {
       </p>
 
       <Collapse in={show}>
-        <>
+        <div>
           <div id="example-collapse-text">
             <Carousel variant="dark" className="px-5 py-2">
               <Carousel.Item>
@@ -89,8 +88,9 @@ const EasyBuy = () => {
             delete a product, and also mark a product as delivered. User can pay
             through PayPal gateway.
           </div>
-          <CButton name = "Live project" url = "hasd" />
-        </>
+          <CButton name = "Live project" url = "https://easy-buy123.herokuapp.com/" />
+          <CButton name = "Github" url = "https://github.com/anshnarula5/ecommerce" />
+        </div>
       </Collapse>
     </div>
   );

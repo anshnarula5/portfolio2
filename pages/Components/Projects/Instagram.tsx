@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { Carousel, Collapse } from "react-bootstrap";
+import CButton from "../CButton";
 
 import insta1 from "/display/instagram-1.jpg";
 import insta2 from "/display/instagram-2.jpg";
@@ -45,6 +46,7 @@ const Instagram = () => {
         other users and all other features same as instagram.
       </p>
       <Collapse in={show}>
+        <div>
         <div id="example-collapse-text">
           <Carousel variant="dark" className="px-5 py-2">
             <Carousel.Item>
@@ -85,6 +87,9 @@ const Instagram = () => {
           Front end is made with react where state management is done using
           redux. Bootstrapis used for app design. Backend is managed using
           express and node.js and data is stored in Mongodb.
+        </div>
+        <CButton name = "Live Project" url = "https://instagam.herokuapp.com/" />
+        <CButton name = "Github" url = "https://github.com/anshnarula5/insta-refactored" />
         </div>
       </Collapse>
     </div>

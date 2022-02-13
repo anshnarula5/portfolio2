@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { Carousel, Col, Collapse, Row } from "react-bootstrap";
+import CButton from "../CButton";
 
 import m1 from "/display/movie-1.jpg";
 import m2 from "/display/movie-2.jpg";
@@ -47,6 +48,7 @@ const Movies = () => {
         them to their watchlist or favourites.
       </p>
       <Collapse in={show}>
+        <div>
         <Row id="example-collapse-text">
           <Col md={6}>
             One can also add a review and/or like other reviews. Users can
@@ -115,6 +117,8 @@ const Movies = () => {
             </Carousel>
           </Col>
         </Row>
+        <CButton name = "Github" url = "https://github.com/anshnarula5/movies" />
+        </div>
       </Collapse>
     </div>
   );
