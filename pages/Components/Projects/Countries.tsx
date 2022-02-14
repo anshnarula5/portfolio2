@@ -2,12 +2,12 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Carousel, Collapse } from "react-bootstrap";
 import CButton from "../CButton";
-import easy1 from "/display/easy-1.jpg";
-import easy2 from "/display/easy-2.jpg";
-import easy3 from "/display/easy-3.jpg";
-import easy4 from "/display/easy-4.jpg";
+import c1 from "/display/c-1.jpg";
+import c2 from "/display/c-2.jpg";
+import c3 from "/display/c-3.jpg";
+import c4 from "/display/c-4.jpg";
 
-const EasyBuy = () => {
+const Countries = () => {
   const [show, setShow] = useState(false);
   const [on, setOn] = useState<Boolean>(false);
   return (
@@ -38,10 +38,10 @@ const EasyBuy = () => {
           {show && <i className="fa-solid fa-xmark"></i>}
         </p>
       </div>
-      <h2>Easy-Buy</h2>
+      <h2>Countries</h2>
       <p>
-        A fully functional Ecommerce app. Users can buy products, add them to
-        cart, or filter products based on their preferences.
+        A React application in which user can interact with maps and country
+        flags.
       </p>
 
       <Collapse in={show}>
@@ -50,7 +50,7 @@ const EasyBuy = () => {
             <Carousel variant="dark" className="px-2 py-2">
               <Carousel.Item>
                 <Image
-                  src={easy1}
+                  src={c1}
                   className="d-block w-100"
                   alt="..."
                   priority={true}
@@ -58,7 +58,7 @@ const EasyBuy = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <Image
-                  src={easy2}
+                  src={c2}
                   className="d-block w-100"
                   alt="..."
                   priority={true}
@@ -66,7 +66,7 @@ const EasyBuy = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <Image
-                  src={easy3}
+                  src={c3}
                   className="d-block w-100"
                   alt="..."
                   priority={true}
@@ -74,26 +74,31 @@ const EasyBuy = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <Image
-                  src={easy4}
+                  src={c4}
                   className="d-block w-100"
                   alt="..."
                   priority={true}
                 />
               </Carousel.Item>
             </Carousel>
-            Here users can browse for different product or sort them by their
-            price or rating. Users can also filter them based on categories of
-            their preference or on the basis of price. This website also has
-            admin functionality which has abilities to create a new product,
-            delete a product, and also mark a product as delivered. User can pay
-            through PayPal gateway.
+            User can get each country's information either by searching, by
+            flags or by pointing a country in map Openweathermap API is used for
+            providing weather information which is dispayed using chart.js.
+            AmCharts is used for displaying maps and bootstrap is used for
+            styling
           </div>
-          <CButton name = "Live project" url = "https://easy-buy123.herokuapp.com/" />
-          <CButton name = "Github" url = "https://github.com/anshnarula5/ecommerce" />
+          <CButton
+            name="Live project"
+            url="https://countries-app-a5.netlify.app/"
+          />
+          <CButton
+            name="Github"
+            url="https://github.com/anshnarula5/countries1"
+          />
         </div>
       </Collapse>
     </div>
   );
 };
 
-export default EasyBuy;
+export default Countries;

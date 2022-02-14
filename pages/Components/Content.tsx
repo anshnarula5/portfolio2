@@ -6,11 +6,9 @@ import Tech from "./sections/Tech";
 const Content = () => {
   return (
     <>
-    <Projects />
+      <Projects />
       <Tech />
-      <div className="gradient fixed-bottom">
-        
-    </div>
+      <div className="gradient fixed-bottom"></div>
     </>
   );
 };

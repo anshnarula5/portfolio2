@@ -2,12 +2,11 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Carousel, Collapse } from "react-bootstrap";
 import CButton from "../CButton";
-import easy1 from "/display/easy-1.jpg";
-import easy2 from "/display/easy-2.jpg";
-import easy3 from "/display/easy-3.jpg";
-import easy4 from "/display/easy-4.jpg";
+import chatter1 from "/display/chatter-1.jpg";
+import chatter2 from "/display/chatter-2.jpg";
+import chatter3 from "/display/chatter-3.jpg";
 
-const EasyBuy = () => {
+const Chatter = () => {
   const [show, setShow] = useState(false);
   const [on, setOn] = useState<Boolean>(false);
   return (
@@ -38,10 +37,10 @@ const EasyBuy = () => {
           {show && <i className="fa-solid fa-xmark"></i>}
         </p>
       </div>
-      <h2>Easy-Buy</h2>
+      <h2>Chatter</h2>
       <p>
-        A fully functional Ecommerce app. Users can buy products, add them to
-        cart, or filter products based on their preferences.
+        A realtime chat-app where user can message their friends. Users can
+        connect with each other and chat with them one on one.
       </p>
 
       <Collapse in={show}>
@@ -50,7 +49,7 @@ const EasyBuy = () => {
             <Carousel variant="dark" className="px-2 py-2">
               <Carousel.Item>
                 <Image
-                  src={easy1}
+                  src={chatter1}
                   className="d-block w-100"
                   alt="..."
                   priority={true}
@@ -58,7 +57,7 @@ const EasyBuy = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <Image
-                  src={easy2}
+                  src={chatter2}
                   className="d-block w-100"
                   alt="..."
                   priority={true}
@@ -66,34 +65,30 @@ const EasyBuy = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <Image
-                  src={easy3}
-                  className="d-block w-100"
-                  alt="..."
-                  priority={true}
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <Image
-                  src={easy4}
+                  src={chatter3}
                   className="d-block w-100"
                   alt="..."
                   priority={true}
                 />
               </Carousel.Item>
             </Carousel>
-            Here users can browse for different product or sort them by their
-            price or rating. Users can also filter them based on categories of
-            their preference or on the basis of price. This website also has
-            admin functionality which has abilities to create a new product,
-            delete a product, and also mark a product as delivered. User can pay
-            through PayPal gateway.
+            This is a fully authenticated realtime messaging application. Here
+            users neea to connect to other users to interact with each other.
+            Socket.io is used for making chat flow real time with node.js
+            backend
           </div>
-          <CButton name = "Live project" url = "https://easy-buy123.herokuapp.com/" />
-          <CButton name = "Github" url = "https://github.com/anshnarula5/ecommerce" />
+          <CButton
+            name="Live project"
+            url="https://chatter-mern-socketio.netlify.app/"
+          />
+          <CButton
+            name="Github"
+            url="https://github.com/anshnarula5/chatter"
+          />
         </div>
       </Collapse>
     </div>
   );
 };
 
-export default EasyBuy;
+export default Chatter;

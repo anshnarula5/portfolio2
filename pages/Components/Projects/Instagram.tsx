@@ -29,7 +29,7 @@ const Instagram = () => {
         setOn(false);
       }}
     >
-      <p>Mobile</p>
+      <p>Web</p>
       <p
         onClick={() => {
           setShow(false);
@@ -48,7 +48,7 @@ const Instagram = () => {
       <Collapse in={show}>
         <div>
         <div id="example-collapse-text">
-          <Carousel variant="dark" className="px-5 py-2">
+          <Carousel variant="dark" className="px-2 py-2">
             <Carousel.Item>
               <Image
                 src={insta1}

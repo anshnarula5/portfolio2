@@ -57,7 +57,7 @@ const Movies = () => {
             list of all cast of the movie
           </Col>
           <Col md={6}>
-            <Carousel variant="dark" className="px-4 py-2">
+            <Carousel variant="dark" className="px-2 py-2">
               <Carousel.Item>
                 <Image
                   src={m1}
