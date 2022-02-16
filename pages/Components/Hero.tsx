@@ -17,8 +17,10 @@ const Hero = () => {
         Hello there, <br />I am Ansh Narula
       </h1>
       <div className="my-5">
-        I am a passionate full stack developer with background knowledge of MERN
-        stack with redux.
+        I am a full stack developer with background knowledge of MERN
+        stack with redux. Passionate about learning new technologies. Proficient
+        in solving large scale problems and a keen phliomath.
+        
       </div>
       <div style={{ display: "flex", flexDirection: "column" }}>
         <Link href="#projects">
