@@ -8,7 +8,7 @@ import Trekkar from '../Projects/Trekkar'
 
 const Projects = () => {
   return (
-    <div className="right pt-5" id = "projects">
+    <div className="right pt-5">
       <EasyBuy />
       <Movies />
       <Instagram />

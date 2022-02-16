@@ -39,7 +39,7 @@ const EasyBuy = () => {
         </p>
       </div>
       <h2>Easy-Buy</h2>
-      <p>
+      <p className="shortText">
         A fully functional Ecommerce app. Users can buy products, add them to
         cart, or filter products based on their preferences.
       </p>
