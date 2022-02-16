@@ -3,7 +3,7 @@ import Auth from "../Blogs/Auth";
 
 const Blogs = () => {
   return (
-    <div className="right pt-3" >
+    <div className="right pt-3 " >
       <Auth />
     </div>
   );
