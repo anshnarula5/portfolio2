@@ -1,15 +1,15 @@
 import React from "react";
 
-const Auth = () => {
+const Redux = () => {
   return (
     <div className="blogCard py-3 px-4 mb-3 mx-2">
       <a
-        href="https://dev.to/anshnarula5/make-a-react-auth-form-using-bootstrap-in-few-simple-steps-2io5"
+        href="https://dev.to/anshnarula5/setup-redux-for-your-react-application-in-few-simple-steps-1f1"
         target="_blank"
         style={{ color: "white", textDecoration: "none" }}
       >
-        <p>Feb 16' 2022</p>
-        <h2>Make a React-Auth form using Bootstrap in few simple steps!</h2>
+        <p>Feb 24' 2022</p>
+        <h2>Setup Redux for your react application in few simple steps!</h2>
         <i className="blockquote-footer"> 4 min read</i>
         {/* ><i className="fa-regular fa-clock"></i */}
       </a>
@@ -17,4 +17,4 @@ const Auth = () => {
   );
 };
 
-export default Auth;
+export default Redux;

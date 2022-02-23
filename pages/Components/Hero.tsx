@@ -28,7 +28,7 @@ const Hero = () => {
             className={`link my-1 ${url === "/#projects" && "active"}`}
             onClick={() => setToggle((prev) => !prev)}
           >
-            Projects
+         Projects
           </a>
         </Link>
         <Link href="#tech">
