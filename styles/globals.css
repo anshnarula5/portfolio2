@@ -133,3 +133,7 @@ a {
   margin-top: 1rem;
 } */
 
+
+.form-control{
+	box-shadow: none !important
+}

@@ -1,7 +1,10 @@
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
+import { Row, Toast, ToastContainer } from "react-bootstrap";
 
 const Email = () => {
+  const [show, setShow] = useState(true);
+  const [alert, setAlert] = useState({ text: "", type: "" });
   const [formData, setFormData] = useState({
     username: "",
     message: "",
@@ -19,14 +22,16 @@ const Email = () => {
   };
 
   const sendEmail = ({ e }: { e: any }) => {
+    e.preventDefault();
     if (
       message.trim().length === 0 ||
       user_email.trim().length === 0 ||
       username.trim().length === 0
     ) {
       console.log("Please specify all fields");
+      setShow(true);
+      setAlert({ text: "Please specify all fields", type: "danger" });
     } else {
-      e.preventDefault();
       emailjs
         .sendForm(
           "service_6a7nokb",
@@ -36,10 +41,15 @@ const Email = () => {
         )
         .then(
           (result) => {
-            console.log("Mail Sent!", result);
+            setShow(true);
+            setAlert({ text: "Mail Sent!", type: "success" });
           },
           (error) => {
-            console.log("Something went Wrong. Please try again later");
+            setShow(true);
+            setAlert({
+              text: "Something went Wrong. Please try again later",
+              type: "danger",
+            });
           }
         );
       setFormData({ username: "", message: "", user_email: "" });
@@ -47,9 +57,21 @@ const Email = () => {
   };
 
   return (
-    <div style={{ color: "white" }} className="row  text-center w-100">
+    <div style={{ color: "white" }} className="row  text-center w-100 mb-5">
       <div className="col-md-12">
-        <h1 className="my-5">Say Hi</h1>
+        <h1 className="my-3">Say Hi</h1>
+        <Row className="mb-4">
+          <Toast
+            bg={alert.type}
+            className="mx-auto"
+            onClose={() => setShow(false)}
+            show={show}
+            delay={3000}
+            autohide
+          >
+            <Toast.Body>{alert.text}</Toast.Body>
+          </Toast>
+        </Row>
         <form id="form">
           <div className="row mb-3">
             <label className="col-sm-2 col-form-label">Name</label>
@@ -94,7 +116,7 @@ const Email = () => {
             </div>
           </div>
           <button
-            className="btn btn-outline-primary "
+            className="button" style={{backgroundColor : "#3a3939", color : "white"}}
             onClick={(e) => sendEmail({ e })}
           >
             Send
