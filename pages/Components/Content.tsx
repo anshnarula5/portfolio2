@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import Blogs from "./sections/Blogs";
+import Contact from "./sections/Contact";
 import Projects from "./sections/Projects";
 import Tech from "./sections/Tech";
 
@@ -19,6 +20,10 @@ const Content = () => {
         Recent Blogs
       </h1>
       <Blogs />
+      <h1 className="my-5"  id = "contact">
+        Contact
+      </h1>
+      <Contact />
       <div className="gradient fixed-bottom"></div>
     </>
   );

@@ -8,7 +8,6 @@ const Blogs = () => {
     <div className="blogs pt-3 d-flex flex-wrap  " >
       <Redux />
       <Auth />
-      <Email />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import { Row, Toast, ToastContainer } from "react-bootstrap";
 
 const Email = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [alert, setAlert] = useState({ text: "", type: "" });
   const [formData, setFormData] = useState({
     username: "",
@@ -116,7 +116,7 @@ const Email = () => {
             </div>
           </div>
           <button
-            className="button" style={{backgroundColor : "#3a3939", color : "white"}}
+            className="btn" style={{backgroundColor : "#3a3939", color : "white"}}
             onClick={(e) => sendEmail({ e })}
           >
             Send

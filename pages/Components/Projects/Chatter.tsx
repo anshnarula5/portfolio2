@@ -38,7 +38,7 @@ const Chatter = () => {
         </p>
       </div>
       <h2>Chatter</h2>
-      <p>
+      <p >
         A realtime chat-app where user can message their friends. Users can
         connect with each other and chat with them one on one.
       </p>
