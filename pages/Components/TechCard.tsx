@@ -8,7 +8,7 @@ function TechCard({ img, name }: { img: any; name: any }) {
       className="techCard m-1 d-flex flex-column justify-content-between"
     >
       <Image
-        src={img.src}
+        src={img?.src}
         width="1rem"
         height="1rem"
         alt=""
