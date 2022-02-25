@@ -24,7 +24,7 @@ const Hero = () => {
         redux. Passionate about learning new technologies. Proficient in solving
         large scale problems and a keen phliomath.
       </div>
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div  className = "sections">
         <Link href="#projects">
           <a
             className={`link my-1 ${url === "/#projects" && "active"}`}
@@ -58,7 +58,7 @@ const Hero = () => {
           </a>
         </Link>
       </div>
-      <div className="my-5  d-flex">
+      <div className="my-5 links1 ">
         <a
           href="https://github.com/anshnarula5"
           className="link1  d-flex align-items-center justify-content-center"

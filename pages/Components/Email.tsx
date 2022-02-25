@@ -59,7 +59,6 @@ const Email = () => {
   return (
     <div style={{ color: "white" }} className="row  text-center w-100 mb-5">
       <div className="col-md-12">
-        <h1 className="my-3">Say Hi</h1>
         <Row className="mb-4">
           <Toast
             bg={alert.type}

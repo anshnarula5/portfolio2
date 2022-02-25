@@ -107,13 +107,6 @@ a {
   cursor: pointer;
 }
 
-@media screen and (max-width : 768px) {
-  .techCard {
-    background-color: #3a3939;
-    width: 30%;
-    padding: .4rem;
-  }
-}
 
 .button {
   padding: .6rem;
@@ -153,4 +146,40 @@ a {
 
 .btn{
 	box-shadow: none !important
+}
+
+.links1{
+  display: flex;
+}
+.links2{
+  display: none;
+}
+
+.sections{
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width : 768px) {
+  .techCard {
+    background-color: #3a3939;
+    width: 30%;
+    padding: 1rem;
+    font-size:  smaller;
+  }
+  .blogCard{
+    width: 100%;
+  }
+  .sections{
+    display: none;
+  }
+  .links1{
+    display: none;
+  }
+  .links2{
+    display: flex;
+    flex-direction: column;
+  }
+  .name{
+    font-size: 3rem;
+  }
 }
