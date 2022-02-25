@@ -24,37 +24,48 @@ const Hero = () => {
         redux. Passionate about learning new technologies. Proficient in solving
         large scale problems and a keen phliomath.
       </div>
-      <div  className = "sections">
+      <div className="sections">
         <Link href="#projects">
           <a
-            className={`link my-1 ${url === "/#projects" && "active"}`}
+            className={`link my-1 ${
+              url === "/#projects" && "active"
+            } d-flex align-items-center`}
             onClick={() => setToggle((prev) => !prev)}
           >
-            Projects
+            <hr /> <span className="mx-2">Projects</span>
           </a>
         </Link>
         <Link href="#tech">
           <a
-            className={`link my-1 ${url === "/#tech" && "active"}`}
+            className={`link my-1 ${
+              url === "/#tech" && "active"
+            }  d-flex align-items-center`}
             onClick={() => setToggle((prev) => !prev)}
           >
-            Tech
+            {" "}
+            <hr /> <span className="mx-2">Tech Stack</span>
           </a>
         </Link>
         <Link href="#blogs">
           <a
-            className={`link my-1 ${url === "/#blogs" && "active"}`}
+            className={`link my-1 ${
+              url === "/#blogs" && "active"
+            }  d-flex align-items-center`}
             onClick={() => setToggle((prev) => !prev)}
           >
-            Blogs
+            {" "}
+            <hr /> <span className="mx-2">Blogs</span>
           </a>
         </Link>
         <Link href="#contact">
           <a
-            className={`link my-1 ${url === "/#contact" && "active"}`}
+            className={`link my-1 ${
+              url === "/#contact" && "active"
+            }  d-flex align-items-center`}
             onClick={() => setToggle((prev) => !prev)}
           >
-            Contact
+            {" "}
+            <hr /> <span className="mx-2">Contact</span>
           </a>
         </Link>
       </div>

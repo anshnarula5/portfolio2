@@ -104,7 +104,6 @@ a {
 
 .techCard:hover {
   background-color: #536878;
-  cursor: pointer;
 }
 
 
@@ -159,6 +158,13 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+hr{
+  color: white;
+  width: 2rem;
+  display: inline-block;
+}
+
 @media screen and (max-width : 768px) {
   .techCard {
     background-color: #3a3939;
