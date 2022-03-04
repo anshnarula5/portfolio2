@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Carousel, Collapse } from "react-bootstrap";
 import CButton from "../CButton";
+import SButton from "../SButton";
 import easy1 from "/display/easy-1.jpg";
 import easy2 from "/display/easy-2.jpg";
 import easy3 from "/display/easy-3.jpg";
@@ -89,7 +90,7 @@ const EasyBuy = () => {
             through PayPal gateway.
           </div>
           <CButton name = "Live project" url = "https://easy-buy123.herokuapp.com/" />
-          <CButton name = "Github" url = "https://github.com/anshnarula5/ecommerce" />
+          <SButton name = "Github" url = "https://github.com/anshnarula5/ecommerce" />
         </div>
       </Collapse>
     </div>

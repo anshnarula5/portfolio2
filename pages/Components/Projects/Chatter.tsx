@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Carousel, Collapse } from "react-bootstrap";
 import CButton from "../CButton";
+import SButton from "../SButton";
 import chatter1 from "/display/chatter-1.jpg";
 import chatter2 from "/display/chatter-2.jpg";
 import chatter3 from "/display/chatter-3.jpg";
@@ -81,7 +82,7 @@ const Chatter = () => {
             name="Live project"
             url="https://chatter-mern-socketio.netlify.app/"
           />
-          <CButton
+          <SButton
             name="Github"
             url="https://github.com/anshnarula5/chatter"
           />

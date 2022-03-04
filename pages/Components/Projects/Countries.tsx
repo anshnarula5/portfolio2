@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Carousel, Collapse } from "react-bootstrap";
 import CButton from "../CButton";
+import SButton from "../SButton";
 import c1 from "/display/c-1.jpg";
 import c2 from "/display/c-2.jpg";
 import c3 from "/display/c-3.jpg";
@@ -91,7 +92,7 @@ const Countries = () => {
             name="Live project"
             url="https://countries-app-a5.netlify.app/"
           />
-          <CButton
+          <SButton
             name="Github"
             url="https://github.com/anshnarula5/countries1"
           />

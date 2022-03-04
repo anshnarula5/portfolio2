@@ -113,17 +113,31 @@ a {
   margin-block: 1rem !important;
   display: inline-block !important;
   color: white;
+  background-color: #272424 ;
   text-decoration: none;
   margin-right: 1rem;
-  border: .1rem solid  #272424;
   transition: .2s linear;
-  opacity: 0.7;
 }
 .button:hover {
   box-shadow: inset 6.5em 0 0 0 var(--hover);
+  transform: scale(1.05);
   color: white;
-  background-color: #272424 ;
-  opacity: 1;
+}
+.button1 {
+  padding: .4rem;
+  padding-inline: 1rem;
+  margin-block: 1rem !important;
+  display: inline-block !important;
+  color: white;
+  border: .2rem solid #272424;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: .2s linear;
+}
+.button1:hover {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+  transform: scale(1.05);
+  color: white;
 }
 
 .gradient {
