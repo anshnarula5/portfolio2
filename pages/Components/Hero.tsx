@@ -20,10 +20,11 @@ const Hero = () => {
         Hello there, <br />I am Ansh Narula
       </h1>
       <div className="my-5 secondaryText">
-        I am a full stack developer with background knowledge of MERN stack with
+        A full stack developer with background knowledge of MERN stack with
         redux. Passionate about learning new technologies. Proficient in solving
         large scale problems and a keen phliomath.
       </div>
+  
       <div className="sections">
         <Link href="#projects">
           <a
@@ -76,8 +77,7 @@ const Hero = () => {
           target="_blank"
         >
           <div>
-            <BsGithub /> <span className="px-1"> Github</span>{" "}
-            <BiLinkExternal />
+            <BsGithub size={30} /> 
           </div>
         </a>
         <a
@@ -85,18 +85,14 @@ const Hero = () => {
           href="https://www.linkedin.com/in/anshnarula/"
           className="link1 mx-4 "
         >
-          <BsLinkedin />
-          <span className="px-1"> LinkedIn</span>
-          <BiLinkExternal />
+          <BsLinkedin size={28} />
         </a>
         <a
           target="_blank"
           href="mailto:anshnarula55@gmail.com"
           className="link1 "
         >
-          <IoMdMail />
-          <span className="px-1"> Mail</span>
-          <BiLinkExternal />
+          <IoMdMail size={32} />
         </a>
       </div>
     </div>

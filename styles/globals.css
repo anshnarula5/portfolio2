@@ -28,6 +28,7 @@ a {
 
 .hero {
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .projectCard {
@@ -75,9 +76,10 @@ a {
   color: white;
 }
 .link1 {
-  color: rgb(219, 219, 219);
+  color: rgb(139, 139, 139);
   text-decoration: none;
   transition: all linear .15s;
+
 }
 
 .link1:hover {
@@ -92,6 +94,7 @@ a {
 
 .secondaryText{
   color: rgb(219, 219, 219);
+  font-size: larger;
 }
 
 .techCard {
