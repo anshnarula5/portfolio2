@@ -81,7 +81,7 @@ const Email = () => {
                 name="username"
                 type="text"
                 className="form-control"
-                id="inputEmail3"
+                id="name"
                 style={{ backgroundColor: "transparent", color: "white" }}
               />
             </div>
@@ -115,7 +115,7 @@ const Email = () => {
             </div>
           </div>
           <button
-            className="btn" style={{backgroundColor : "#3a3939", color : "white"}}
+            className="btn" style={{ backgroundColor: "#3a3939", color: "white" }}
             onClick={(e) => sendEmail({ e })}
           >
             Send

@@ -12,9 +12,6 @@ const Projects = () => {
       <EasyBuy />
       <Movies />
       <Instagram />
-      <Chatter />
-      <Countries />
-      <Trekkar />
     </div>
   )
 }

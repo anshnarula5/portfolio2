@@ -32,6 +32,15 @@ a {
 }
 
 .projectCard {
+  border-left: .1rem solid #536878;
+  background-color: #3a3939;
+  height: 100%;
+  border-radius: 0;
+  transition: all linear .3s;
+}
+
+.careerCard {
+  border-left: .1rem solid #536878;
   background-color: #3a3939;
   height: 100%;
   border-radius: 0;
@@ -39,6 +48,7 @@ a {
 }
 
 .blogCard {
+  border-left: .1rem solid #536878;
   background-color: #3a3939;
   height: 100%;
   width: 45%;
@@ -63,6 +73,9 @@ a {
   cursor: pointer;
   box-shadow: black;
   transition: all linear .15s;
+}
+.careerCard:hover {
+  background-color: #536878;
 }
 
 
@@ -94,7 +107,7 @@ a {
 
 .secondaryText{
   color: rgb(219, 219, 219);
-  font-size: larger;
+  font-size: large;
 }
 
 .techCard {

@@ -15,32 +15,38 @@ const Hero = () => {
     console.log(path);
   }, [router.asPath, toggle]);
   return (
-    <div className="hero sticky-top pt-5 d-flex flex-column justify-content-center">
+    <div className="hero sticky-top pt-2 d-flex flex-column justify-content-center">
       <h1 className="name ">
         Hello there, <br />I am Ansh Narula
       </h1>
-      <div className="my-5 secondaryText">
-        A full stack developer with background knowledge of MERN stack with
-        redux. Passionate about learning new technologies. Proficient in solving
-        large scale problems and a keen phliomath.
+      <div className="my-4 secondaryText">
+        Final year undergraduate at IIITDM Jabalpur.
+        Enthusiastic software developer who is interested in discovering new technologies and applying them to practical situations.
+        Experienced in fast pace working environment and passonate about developing scalable applications.
       </div>
-  
       <div className="sections">
         <Link href="#projects">
           <a
-            className={`link my-1 ${
-              url === "/#projects" && "active"
-            } d-flex align-items-center`}
+            className={`link my-1 ${url === "/#projects" && "active"
+              } d-flex align-items-center`}
             onClick={() => setToggle((prev) => !prev)}
           >
             <hr /> <span className="mx-2">Projects</span>
           </a>
         </Link>
+        <Link href="#career">
+          <a
+            className={`link my-1 ${url === "/#career" && "active"
+              } d-flex align-items-center`}
+            onClick={() => setToggle((prev) => !prev)}
+          >
+            <hr /> <span className="mx-2">Career</span>
+          </a>
+        </Link>
         <Link href="#tech">
           <a
-            className={`link my-1 ${
-              url === "/#tech" && "active"
-            }  d-flex align-items-center`}
+            className={`link my-1 ${url === "/#tech" && "active"
+              }  d-flex align-items-center`}
             onClick={() => setToggle((prev) => !prev)}
           >
             {" "}
@@ -49,9 +55,8 @@ const Hero = () => {
         </Link>
         <Link href="#blogs">
           <a
-            className={`link my-1 ${
-              url === "/#blogs" && "active"
-            }  d-flex align-items-center`}
+            className={`link my-1 ${url === "/#blogs" && "active"
+              }  d-flex align-items-center`}
             onClick={() => setToggle((prev) => !prev)}
           >
             {" "}
@@ -60,9 +65,8 @@ const Hero = () => {
         </Link>
         <Link href="#contact">
           <a
-            className={`link my-1 ${
-              url === "/#contact" && "active"
-            }  d-flex align-items-center`}
+            className={`link my-1 ${url === "/#contact" && "active"
+              }  d-flex align-items-center`}
             onClick={() => setToggle((prev) => !prev)}
           >
             {" "}
@@ -77,12 +81,12 @@ const Hero = () => {
           target="_blank"
         >
           <div>
-            <BsGithub size={30} /> 
+            <BsGithub size={30} />
           </div>
         </a>
         <a
           target="_blank"
-          href="https://www.linkedin.com/in/anshnarula/"
+          href="https://www.liProjectsnkedin.com/in/anshnarula/"
           className="link1 mx-4 "
         >
           <BsLinkedin size={28} />

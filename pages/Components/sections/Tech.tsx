@@ -28,6 +28,8 @@ import chartjs from "/img/chartjs.svg";
 import postman from "/img/postman.png";
 import python from "/img/python.svg";
 import c from "/img/c.svg";
+import mysql from "/img/mysql.png";
+import psql from "/img/postgresql.svg";
 import typescript from "/img/typescript.svg";
 import reactNative from "/img/reactNative.svg";
 
@@ -37,6 +39,8 @@ const Tech = () => {
       <TechCard img={js} name="Javascript" />
       <TechCard img={python} name="Python" />
       <TechCard img={c} name="C++" />
+      <TechCard img={mysql} name="Mysql" />
+      <TechCard img={psql} name="Postgres" />
       <TechCard img={typescript} name="Typescript" />
       <TechCard img={react} name="React" />
       <TechCard img={nodejs} name="Nodejs" />
@@ -44,19 +48,9 @@ const Tech = () => {
       <TechCard img={mongodb} name="MongoDB" />
       <TechCard img={next} name="Next.js" />
       <TechCard img={react} name="ReactNative" />
-      <TechCard img={firebase} name="Firebase" />
       <TechCard img={css3} name="CSS" />
-      <TechCard img={materialui} name="MUI" />
       <TechCard img={redux1} name="Redux" />
-      <TechCard img={ejs} name="EJS" />
       <TechCard img={git} name="Git" />
-      <TechCard img={github} name="Github" />
-      <TechCard img={socketio} name="Socket.io" />
-      <TechCard img={postman} name="Postman" />
-      <TechCard img={bootstrap} name="Bootstrap" />
-      <TechCard img={sass} name="SCSS" />
-      <TechCard img={jwt} name="JWT" />
-      <TechCard img={chartjs} name="Chart.js" />
     </div>
   );
 };

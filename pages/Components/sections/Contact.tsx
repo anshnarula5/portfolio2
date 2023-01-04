@@ -7,9 +7,9 @@ import Email from "../Email";
 const Contact = () => {
   return (
     <div>
-      I am actively looking for an internships role in software engineering and
-      development fields. If you have anything to share you are free to contact
-      me anytime.
+      <p className="secondaryText">
+        Discuss a project or just want to say hi? My inbox is open for all.
+      </p>
       <div className="my-5 links2 ">
         <a
           href="https://github.com/anshnarula5"
