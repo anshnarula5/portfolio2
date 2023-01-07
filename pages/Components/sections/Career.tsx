@@ -7,10 +7,10 @@ const Career = () => {
                     <span className="blockquote-footer">May 2022 - Aug 2022</span>
                 </div>
                 <h2>Biobazaar Healthtech</h2>
-                <p>
+                <p className="secondaryText">
                     Worked in the tech team of a b2b product based firm, that provides a flow of pharmaceutical products between warehouse and retailers.
                 </p>
-                <p>
+                <p className="secondaryText">
                     Tech stack used : React, Node, Typescript, Postgres, Mocha.
                 </p>
 
@@ -21,7 +21,7 @@ const Career = () => {
                     <span className="blockquote-footer">Jan 2023 - Present</span>
                 </div>
                 <h2>Amazon</h2>
-                <p>
+                <p className="secondaryText">
                     Will work with Alexa multmodal initiative team.
                 </p>
             </div>

@@ -43,81 +43,87 @@ const Movies = () => {
         </p>
       </div>
       <h2>Cinepedia</h2>
-      <p>
+      <p className="secondaryText">
         A mobile application where users can browse for different movies and add
         them to their watchlist or favourites.
       </p>
       <Collapse in={show}>
         <div>
-        <Row id="example-collapse-text">
-          <Col md={6}>
-            One can also add a review and/or like other reviews. Users can
-            search for different movies or artists. Users can also watch the
-            trailer of the movie. Each movie has its own details along with the
-            list of all cast of the movie
-          </Col>
-          <Col md={6}>
-            <Carousel variant="dark" className="px-2 py-2">
-              <Carousel.Item>
-                <Image
-                  src={m1}
-                  className="d-block w-100"
-                  alt="..."
-                  priority={true}
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <Image
-                  src={m2}
-                  className="d-block w-100"
-                  alt="..."
-                  priority={true}
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <Image
-                  src={m3}
-                  className="d-block w-100"
-                  alt="..."
-                  priority={true}
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <Image
-                  src={m4}
-                  className="d-block w-100"
-                  alt="..."
-                  priority={true}
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <Image
-                  src={m5}
-                  className="d-block w-100"
-                  alt="..."
-                  priority={true}
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <Image
-                  src={m6}
-                  className="d-block w-100"
-                  alt="..."
-                  priority={true}
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <Image
-                  src={m7}
-                  className="d-block w-100"
-                  alt="..."
-                  priority={true}
-                />
-              </Carousel.Item>
-            </Carousel>
-          </Col>
-        </Row>
-        <CButton name = "Github" url = "https://github.com/anshnarula5/movies" />
+          <Row id="example-collapse-text">
+            <Col md={6}>
+              <p className="secondaryText">
+                The app features a comprehensive list of movies, including a
+                variety of genres and categories. Users can search for specific
+                movies or cast members, and the app will provide detailed
+                information about the film, including a trailer, cast list, and
+                user reviews. Additionally, users can post their own reviews of
+                the movies they have watched. Altogether, this app is a great
+                resource for movie enthusiasts looking to discover new films or
+                find more information about their favorites.
+              </p>
+            </Col>
+            <Col md={6}>
+              <Carousel variant="dark" className="px-2 py-2">
+                <Carousel.Item>
+                  <Image
+                    src={m1}
+                    className="d-block w-100"
+                    alt="..."
+                    priority={true}
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Image
+                    src={m2}
+                    className="d-block w-100"
+                    alt="..."
+                    priority={true}
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Image
+                    src={m3}
+                    className="d-block w-100"
+                    alt="..."
+                    priority={true}
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Image
+                    src={m4}
+                    className="d-block w-100"
+                    alt="..."
+                    priority={true}
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Image
+                    src={m5}
+                    className="d-block w-100"
+                    alt="..."
+                    priority={true}
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Image
+                    src={m6}
+                    className="d-block w-100"
+                    alt="..."
+                    priority={true}
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Image
+                    src={m7}
+                    className="d-block w-100"
+                    alt="..."
+                    priority={true}
+                  />
+                </Carousel.Item>
+              </Carousel>
+            </Col>
+          </Row>
+          <CButton name="Github" url="https://github.com/anshnarula5/movies" />
         </div>
       </Collapse>
     </div>

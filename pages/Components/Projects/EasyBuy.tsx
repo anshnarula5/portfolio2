@@ -40,7 +40,7 @@ const EasyBuy = () => {
         </p>
       </div>
       <h2>Easy-Buy</h2>
-      <p className="shortText">
+      <p className="secondaryText">
         A fully functional Ecommerce app. Users can buy products, add them to
         cart, or filter products based on their preferences.
       </p>
@@ -82,15 +82,24 @@ const EasyBuy = () => {
                 />
               </Carousel.Item>
             </Carousel>
-            Here users can browse for different product or sort them by their
-            price or rating. Users can also filter them based on categories of
-            their preference or on the basis of price. This website also has
-            admin functionality which has abilities to create a new product,
-            delete a product, and also mark a product as delivered. User can pay
-            through PayPal gateway.
+            <p className="secondaryText">
+              Allows users to browse and purchase products from various
+              categories. The app includes a filtering feature that allows users
+              to narrow down their search by category, and a search function that
+              allows them to find specific items. Users can also sort products by
+              price and easily place orders through the app. Payment is securely
+              processed through the PayPal gateway. Overall, this app provides a
+              seamless and convenient shopping experience for users.
+            </p>
           </div>
-          <CButton name = "Live project" url = "https://easy-buy123.herokuapp.com/" />
-          <SButton name = "Github" url = "https://github.com/anshnarula5/ecommerce" />
+          <CButton
+            name="Live project"
+            url="https://easy-buy123.herokuapp.com/"
+          />
+          <SButton
+            name="Github"
+            url="https://github.com/anshnarula5/ecommerce"
+          />
         </div>
       </Collapse>
     </div>

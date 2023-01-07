@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="my-4 secondaryText">
         Final year undergraduate at IIITDM Jabalpur.
         Enthusiastic software developer who is interested in discovering new technologies and applying them to practical situations.
-        Experienced in fast pace working environment and passonate about developing scalable applications.
+        Experienced in fast pace working environment and passionate about developing scalable applications.
       </div>
       <div className="sections">
         <Link href="#projects">

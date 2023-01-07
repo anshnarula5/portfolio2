@@ -108,6 +108,7 @@ a {
 .secondaryText{
   color: rgb(219, 219, 219);
   font-size: large;
+  letter-spacing: .03rem;
 }
 
 .techCard {

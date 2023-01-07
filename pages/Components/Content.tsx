@@ -26,7 +26,7 @@ const Content = () => {
       </h1>
       <Blogs />
       <h1 className="my-5" id="contact">
-        React out to me
+        Reach out to me
       </h1>
       <Contact />
       <div className="gradient fixed-bottom"></div>

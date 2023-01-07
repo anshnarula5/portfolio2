@@ -15,82 +15,88 @@ const Instagram = () => {
 
   return (
     <div
-    className="projectCard py-3 px-4 mb-3"
-    onClick={() => {
-      if (!on) {
-        setShow(true);
-        setOn(true);
-      }
-    }}
-  >
-    <div
-      className="d-flex justify-content-between align-items-center"
+      className="projectCard py-3 px-4 mb-3"
       onClick={() => {
-        setShow(false);
-        setOn(false);
+        if (!on) {
+          setShow(true);
+          setOn(true);
+        }
       }}
     >
-      <p>Web</p>
-      <p
+      <div
+        className="d-flex justify-content-between align-items-center"
         onClick={() => {
           setShow(false);
           setOn(false);
         }}
-        className="fs-3"
       >
-        {show && <i className="fa-solid fa-xmark"></i>}
-      </p>
-    </div>
+        <p>Web</p>
+        <p
+          onClick={() => {
+            setShow(false);
+            setOn(false);
+          }}
+          className="fs-3"
+        >
+          {show && <i className="fa-solid fa-xmark"></i>}
+        </p>
+      </div>
       <h2>Instagram</h2>
-      <p>
+      <p className="secondaryText">
         An application where users can add posts, like other's post, follow
         other users and all other features same as instagram.
       </p>
       <Collapse in={show}>
         <div>
-        <div id="example-collapse-text">
-          <Carousel variant="dark" className="px-2 py-2">
-            <Carousel.Item>
-              <Image
-                src={insta1}
-                className="d-block w-100"
-                alt="..."
-                priority={true}
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Image
-                src={insta2}
-                className="d-block w-100"
-                alt="..."
-                priority={true}
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Image
-                src={insta3}
-                className="d-block w-100"
-                alt="..."
-                priority={true}
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Image
-                src={insta4}
-                className="d-block w-100"
-                alt="..."
-                priority={true}
-              />
-            </Carousel.Item>
-          </Carousel>
-          User can also follow /unfollow each other and can interact with their
-          posts This web application is fully authenticated with the use of JWT.
-          Front end is made with react where state management is done using
-          redux. Bootstrapis used for app design. Backend is managed using
-          express and node.js and data is stored in Mongodb.
-        </div>
-        <CButton name = "Live Project" url = "https://instagam.herokuapp.com/" />
-        <SButton name = "Github" url = "https://github.com/anshnarula5/insta-refactored" />
+          <div id="example-collapse-text">
+            <Carousel variant="dark" className="px-2 py-2">
+              <Carousel.Item>
+                <Image
+                  src={insta1}
+                  className="d-block w-100"
+                  alt="..."
+                  priority={true}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image
+                  src={insta2}
+                  className="d-block w-100"
+                  alt="..."
+                  priority={true}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image
+                  src={insta3}
+                  className="d-block w-100"
+                  alt="..."
+                  priority={true}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image
+                  src={insta4}
+                  className="d-block w-100"
+                  alt="..."
+                  priority={true}
+                />
+              </Carousel.Item>
+            </Carousel>
+            <p className="secondaryText">
+              This is a fully functional social media platform
+              that allows users to share photos and videos with their followers,
+              discover new content and explore profiles of
+              other users. It also includes features such as
+              commenting, and liking. This platform includes a responsive design for seamless user
+              experience on any device. This app aims to replicate the popular social media platform with a sleek and user-friendly interface.
+            </p>
+          </div>
+          <CButton name="Live Project" url="https://instagam.herokuapp.com/" />
+          <SButton
+            name="Github"
+            url="https://github.com/anshnarula5/insta-refactored"
+          />
         </div>
       </Collapse>
     </div>
