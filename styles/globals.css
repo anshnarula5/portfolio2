@@ -130,7 +130,7 @@ a {
   margin-block: 1rem !important;
   display: inline-block !important;
   color: white;
-  background-color: #272424 ;
+  background-color: #272424;
   text-decoration: none;
   margin-right: 1rem;
   transition: .2s linear;
@@ -146,7 +146,7 @@ a {
   margin-block: 1rem !important;
   display: inline-block !important;
   color: white;
-  border: .2rem solid #272424;
+  border: .1rem solid #272424;
   text-decoration: none;
   margin-right: 1rem;
   transition: .2s linear;

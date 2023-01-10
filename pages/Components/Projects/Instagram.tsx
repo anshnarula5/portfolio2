@@ -92,8 +92,7 @@ const Instagram = () => {
               experience on any device. This app aims to replicate the popular social media platform with a sleek and user-friendly interface.
             </p>
           </div>
-          <CButton name="Live Project" url="https://instagam.herokuapp.com/" />
-          <SButton
+          <CButton
             name="Github"
             url="https://github.com/anshnarula5/insta-refactored"
           />
