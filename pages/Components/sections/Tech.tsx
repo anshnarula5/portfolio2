@@ -33,7 +33,7 @@ import psql from "/img/postgresql.svg";
 import typescript from "/img/typescript.svg";
 import lambda from "/img/lambda.png";
 import sns from "/img/sns.png";
-import sqs from "/img/sqs.png";
+import sqs from "/img/sqs.svg";
 import vpc from "/img/vpc.png";
 import java from "/img/java.png";
 
