@@ -9,14 +9,14 @@ import Tech from "./sections/Tech";
 const Content = () => {
   return (
     <>
-      <h1 className="mt-5" id="projects">
-        Projects
-      </h1>
-      <Projects />
       <h1 className="mt-5" id="career">
         Career
       </h1>
       <Career />
+      <h1 className="mt-5" id="projects">
+        Projects
+      </h1>
+      <Projects />
       <h1 className="my-5" id="tech">
         Tech Stack
       </h1>
