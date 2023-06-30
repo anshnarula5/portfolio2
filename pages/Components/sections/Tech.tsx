@@ -31,17 +31,25 @@ import c from "/img/c.svg";
 import mysql from "/img/mysql.png";
 import psql from "/img/postgresql.svg";
 import typescript from "/img/typescript.svg";
-import reactNative from "/img/reactNative.svg";
+import lambda from "/img/lambda.png";
+import sns from "/img/sns.png";
+import sqs from "/img/sqs.png";
+import vpc from "/img/vpc.png";
+import java from "/img/java.png";
 
 const Tech = () => {
   return (
     <div className="d-flex flex-wrap ">
       <TechCard img={js} name="Javascript" />
-      <TechCard img={python} name="Python" />
+      <TechCard img={java} name="Java" />
       <TechCard img={c} name="C++" />
+      <TechCard img={typescript} name="Typescript" />
+      <TechCard img={lambda} name="AWS Lambda" />
+      <TechCard img={sns} name="AWS SNS" />
+      <TechCard img={sqs} name="AWS SQS" />
+      <TechCard img={vpc} name="VPC" />
       <TechCard img={mysql} name="Mysql" />
       <TechCard img={psql} name="Postgres" />
-      <TechCard img={typescript} name="Typescript" />
       <TechCard img={react} name="React" />
       <TechCard img={nodejs} name="Nodejs" />
       <TechCard img={express} name="Express.js" />
