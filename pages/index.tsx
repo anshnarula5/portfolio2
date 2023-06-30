@@ -2,8 +2,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {  Col, Container, Row } from 'react-bootstrap';
 import Hero from './Components/Hero';
 import Content from './Components/Content';
+import { useEffect } from 'react';
+import ReactGA from 'react-ga';
 
 export default function Home() {
+  useEffect(() => {
+    ReactGA.initialize("G-5LSR3DPDVW");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div className= "app">
       <Container>
