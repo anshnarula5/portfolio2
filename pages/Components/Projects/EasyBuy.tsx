@@ -41,8 +41,7 @@ const EasyBuy = () => {
       </div>
       <h2>Easy-Buy</h2>
       <p className="secondaryText">
-        A fully functional Ecommerce app. Users can buy products, add them to
-        cart, or filter products based on their preferences.
+      A fully functional Ecommerce app enabling users to effortlessly browse and purchase products across diverse categories.
       </p>
 
       <Collapse in={show}>
@@ -83,13 +82,9 @@ const EasyBuy = () => {
               </Carousel.Item>
             </Carousel>
             <p className="secondaryText">
-              Allows users to browse and purchase products from various
-              categories. The app includes a filtering feature that allows users
-              to narrow down their search by category, and a search function that
-              allows them to find specific items. Users can also sort products by
-              price and easily place orders through the app. Payment is securely
-              processed through the PayPal gateway. Overall, this app provides a
-              seamless and convenient shopping experience for users.
+            With advanced filtering options, users can easily narrow down their search and find specific items.
+             The app also offers a convenient sorting feature by price and secure payment processing via PayPal,
+             ensuring a seamless and enjoyable shopping experience for users.
             </p>
           </div>
           {/* <CButton

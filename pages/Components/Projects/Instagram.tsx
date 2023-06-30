@@ -41,7 +41,7 @@ const Instagram = () => {
           {show && <i className="fa-solid fa-xmark"></i>}
         </p>
       </div>
-      <h2>Instagram</h2>
+      <h2>Instagram Clone</h2>
       <p className="secondaryText">
         An application where users can add posts, like other's post, follow
         other users and all other features same as instagram.

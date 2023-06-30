@@ -44,22 +44,21 @@ const Movies = () => {
       </div>
       <h2>Cinepedia</h2>
       <p className="secondaryText">
-        A mobile application where users can browse for different movies and add
-        them to their watchlist or favourites.
+        This movie browsing mobile application offers an extensive collection of films across various genres.
       </p>
       <Collapse in={show}>
         <div>
           <Row id="example-collapse-text">
             <Col md={6}>
               <p className="secondaryText">
-                The app features a comprehensive list of movies, including a
-                variety of genres and categories. Users can search for specific
-                movies or cast members, and the app will provide detailed
-                information about the film, including a trailer, cast list, and
-                user reviews. Additionally, users can post their own reviews of
-                the movies they have watched. Altogether, this app is a great
-                resource for movie enthusiasts looking to discover new films or
-                find more information about their favorites.
+                Implemented robust search functionality, including search history for
+                quick access to previous searches.
+                Designed and implemented a rating system, enabling users to rate movies and share their feedback through
+                comments, fostering user interaction and community engagement.
+                Implemented user authentication and personalized features such as wishlists and favorites exclusively
+                for authenticated users, enhancing user engagement and retention.
+                With its user-centric design and an extensive database of movies, 
+                this application serves as a go-to resource for movie enthusiasts.
               </p>
             </Col>
             <Col md={6}>
