@@ -87,10 +87,10 @@ const EasyBuy = () => {
              ensuring a seamless and enjoyable shopping experience for users.
             </p>
           </div>
-          {/* <CButton
+          <CButton
             name="Live project"
-            url="https://easy-buy123.herokuapp.com/"
-          /> */}
+            url="https://easybuy-1.vercel.app/"
+          />
           <CButton
             name="Github"
             url="https://github.com/anshnarula5/ecommerce"

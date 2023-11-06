@@ -15,15 +15,19 @@ const Hero = () => {
     console.log(path);
   }, [router.asPath, toggle]);
   return (
-    <div className="hero sticky-top pt-2 d-flex flex-column justify-content-center">
-      <h1 className="name ">
-        Hello there, <br />I am Ansh Narula
-      </h1>
-      <div className="my-4 secondaryText">
-        Ambitious software engineer with a focus on full-stack development. Proficient in JavaScript, TypeScript, C++, and Java, and
-        skilled in integrating AWS services for efficient and secure software solutions.
-        Eager to contribute to innovative projects and further develop technical skills in a collaborative environment.
+    <div className="hero sticky-top pt-2 d-flex flex-column justify-content-around">
+      <div>
+        <h1 className="name ">
+        Ansh Narula
+        </h1>
+        <h3 className="">
+          Seeking new opportunities
+        </h3>
+        <div className="my-4 secondaryText">
+          JavaScript, TypeScript, C++, Java proficient full-stack engineer integrating AWS, seeking innovative projects and collaborative growth.
+        </div>
       </div>
+      
       <div className="sections">
       <Link href="#career">
           <a

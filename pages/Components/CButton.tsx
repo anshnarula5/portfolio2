@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 
-function CButton({ name, url }: { name: String, url: any }) {
+function CButton({ name, url }: { name: String, url: string }) {
   return (
-    <a className="button" href={url} target= "_blank" >
+    <a className="button techbadge" href={url} target= "_blank" >
       {name}
     </a>
   )

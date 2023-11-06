@@ -96,6 +96,10 @@ const Instagram = () => {
             name="Github"
             url="https://github.com/anshnarula5/insta-refactored"
           />
+           <CButton
+            name="Live project"
+            url="https://instamiligram.vercel.app/"
+          />
         </div>
       </Collapse>
     </div>

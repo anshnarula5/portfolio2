@@ -1,10 +1,12 @@
+import Techbadge from "../Techbadge";
+
 const Career = () => {
     return (
         <div className="right pt-5">
             <div className="careerCard py-3 px-4 mb-3">
                 <div className="d-flex justify-content-between align-items-center">
                     <p>SDE Intern</p>
-                    <span className="blockquote-footer">Jan 2023 - Jun 2023</span>
+                    <span className="blockquote-footer secondaryText">Jan 2023 - Jun 2023</span>
                 </div>
                 <h2>Amazon</h2>
                 <p className="secondaryText pt-2">
@@ -12,14 +14,18 @@ const Career = () => {
                 ensuring privacy compliance. Built event-driven infrastructure, handled deletion requests, 
                 and established secure connections, showcasing problem-solving skills and teamwork.
                 </p>
-                <p className="secondaryText">
-                    Tech stack used : Java, AWS - SNS/SQS/Lambda/VPC, TypeScript, Mockito, Junit.
+                <p className="secondaryText d-flex flex-wrap mb-1">
+                    <Techbadge tech = "Java" />
+                    <Techbadge tech = "AWS" />
+                    <Techbadge tech = "TypeScript" />
+                    <Techbadge tech = "Mockito" />
+                    <Techbadge tech = "JUnit" />
                 </p>
             </div>
             <div className="careerCard py-3 px-4 mb-3">
                 <div className="d-flex justify-content-between align-items-center">
                     <p>SDE Intern</p>
-                    <span className="blockquote-footer">May 2022 - Aug 2022</span>
+                    <span className="blockquote-footer secondaryText">May 2022 - Aug 2022</span>
                 </div>
                 <h2>Biobazaar Healthtech</h2>
                 <p className="secondaryText pt-2">
@@ -29,6 +35,14 @@ const Career = () => {
                 </p>
                 <p className="secondaryText">
                     Tech stack used : React, Node, Typescript, Postgres, Mocha.
+                </p>
+                <p className="secondaryText d-flex flex-wrap mb-1">
+                    <Techbadge tech = "React" />
+                    <Techbadge tech = "TypeScript" />
+                    <Techbadge tech = "Javascript" />
+                    <Techbadge tech = "Node" />
+                    <Techbadge tech = "Postgres" />
+                    <Techbadge tech = "Mocha" />
                 </p>
             </div>
         </div>
