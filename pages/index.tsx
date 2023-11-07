@@ -4,6 +4,7 @@ import Hero from './Components/Hero';
 import Content from './Components/Content';
 import { useEffect } from 'react';
 import ReactGA from 'react-ga';
+import Spotlight from './Components/Spotlight';
 
 export default function Home() {
   useEffect(() => {
@@ -13,7 +14,8 @@ export default function Home() {
   return (
     <div className= "app">
       <Container>
-        <Row>
+      <Spotlight />
+        <Row className=''>
           <Col md={6}><Hero /></Col>
           <Col md={6}><Content /></Col>
         </Row>

@@ -90,7 +90,7 @@ const Hero = () => {
         </a>
         <a
           target="_blank"
-          href="https://www.liProjectsnkedin.com/in/anshnarula/"
+          href="https://www.linkedin.com/in/anshnarula/"
           className="link1 mx-4 "
         >
           <BsLinkedin size={28} />

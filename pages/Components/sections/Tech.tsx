@@ -36,6 +36,7 @@ import sns from "/img/sns.png";
 import sqs from "/img/sqs.svg";
 import vpc from "/img/vpc.png";
 import java from "/img/java.png";
+import springboot from "/img/springboot.svg";
 
 const Tech = () => {
   return (
@@ -48,6 +49,7 @@ const Tech = () => {
       <TechCard img={sns} name="AWS SNS" />
       <TechCard img={sqs} name="AWS SQS" />
       <TechCard img={vpc} name="VPC" />
+      <TechCard img={springboot} name="SpringBoot" />
       <TechCard img={mysql} name="Mysql" />
       <TechCard img={psql} name="Postgres" />
       <TechCard img={react} name="React" />
