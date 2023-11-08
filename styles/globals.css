@@ -213,6 +213,15 @@ hr{
 }
 
 @media screen and (max-width : 768px) {
+  .careerCard{
+    opacity: 100%;
+  }
+  .blogCard{
+    opacity: 100%;
+  }
+  .projectCard{
+    opacity: 100%;
+  }
   .techCard {
     width: 23%;
     padding: 1rem;
