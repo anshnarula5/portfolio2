@@ -57,7 +57,7 @@ a {
 
 
 .careerCard {
-  border-left: .1rem solid #354557;
+  /* border-left: .1rem solid #354557; */
   background-color: transparent;
   height: 100%;
   border-radius: 0;
@@ -214,8 +214,7 @@ hr{
 
 @media screen and (max-width : 768px) {
   .techCard {
-    background-color: #3a3939;
-    width: 30%;
+    width: 23%;
     padding: 1rem;
     font-size:  smaller;
   }
@@ -258,7 +257,7 @@ h3{
   width: 40rem;
   height: 40rem;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(51, 75, 128, 0.8) 10%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(51, 75, 128, 0.8) 12%, rgba(255, 255, 255, 0) 70%);
   pointer-events: none;
   z-index: 1;
   mix-blend-mode: screen;
