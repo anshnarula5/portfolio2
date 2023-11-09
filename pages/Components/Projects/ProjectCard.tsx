@@ -55,7 +55,7 @@ const ProjectCard = ({ imageSrc, projectName, githubLink, liveLink, summary, des
             {description}
           </div>
           <div className="secondaryText d-flex flex-wrap ">
-            {technologies.map((tech: any, index: any) => (
+            {technologies && technologies.length > 0 && technologies.map((tech: any, index: any) => (
               <Techbadge tech={tech} key={index} />
             ))}
           </div>
