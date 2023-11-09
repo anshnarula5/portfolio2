@@ -211,7 +211,9 @@ hr{
   width: 2rem;
   display: inline-block;
 }
-
+.career_mobile{
+  display: none;
+}
 @media screen and (max-width : 768px) {
   .careerCard{
     opacity: 100%;
@@ -242,6 +244,12 @@ hr{
   }
   .name{
     font-size: 3rem;
+  }
+  .career_web{
+    display: none;
+  }
+  .career_mobile{
+    display: block;
   }
 }
 
