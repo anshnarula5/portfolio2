@@ -4,7 +4,7 @@ import Image from "next/image";
 import { BsGithub } from "react-icons/bs";
 import Techbadge from "../Techbadge";
 
-const ProjectCard = ({ imageSrc, projectName, githubLink, liveLink, summary, description, images, technologies } : any) => {
+const ProjectCard = ({ imageSrc, projectName, githubLink, liveLink, summary, description, images, technologies }: any) => {
   const [show, setShow] = useState(false);
 
   return (
@@ -26,40 +26,41 @@ const ProjectCard = ({ imageSrc, projectName, githubLink, liveLink, summary, des
             </a>
           </span>
         </div>
-        <p className="secondaryText">
+        <div className="secondaryText">
           {summary}
-          <p
+          <div
             className="brightText d-inline toggleCollapse"
             onClick={() => {
               setShow(!show);
             }}
           >
             {show ? " Show less" : " Show more"}
-          </p>
-        </p>
+          </div>
+        </div>
       </Col>
       <Collapse in={show}>
-          <div>
-            <div id="example-collapse-text">
-              <Carousel variant="dark" className="px-2 py-2">
-                {images && images.length > 0 && images.map((image : any, index : any) => (
+        <div className="my-3">
+          <div id="example-collapse-text">
+            <Carousel variant="dark" className="px-2 py-2">
+              {images &&
+                images.length > 0 &&
+                images.map((image: any, index: any) => (
                   <Carousel.Item key={index}>
                     <Image src={image} className="d-block w-100" alt="..." priority={true} />
                   </Carousel.Item>
                 ))}
-              </Carousel>
-            </div>
-            <p className="secondaryText">
-            {description}
-
-            </p>
-            <p className="secondaryText d-flex flex-wrap mb-1">
-              {technologies.map((tech : any, index : any) => (
-                <Techbadge tech={tech} key={index} />
-              ))}
-            </p>
+            </Carousel>
           </div>
-        </Collapse>
+          <div className="secondaryText mb-3">
+            {description}
+          </div>
+          <div className="secondaryText d-flex flex-wrap ">
+            {technologies.map((tech: any, index: any) => (
+              <Techbadge tech={tech} key={index} />
+            ))}
+          </div>
+        </div>
+      </Collapse>
     </Row>
   );
 };
