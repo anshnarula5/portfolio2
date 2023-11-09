@@ -66,7 +66,7 @@ const Career = () => {
                 </div>
               </TimelineOppositeContent>
               <TimelineSeparator  className=" py-2">
-                <TimelineDot className="icon pt-3"><i className="fa-regular fa-building fa-lg"></i></TimelineDot>
+                <TimelineDot className="pt-3"  style={{backgroundColor : "transparent"}}><i className="fa-regular fa-building fa-lg"></i></TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent className="pt-4"><span className="secondaryText px-2  ">2022</span></TimelineContent>
