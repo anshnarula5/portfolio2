@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div>
       <p className="secondaryText">
-        Discuss a project or just want to say hi? My inbox is open for all.
+      For any inquiries, project discussions, or simply to connect, please feel free to reach out. My inbox is open, and I look forward to engaging with you
       </p>
       <div className="my-5 links2 ">
         <a

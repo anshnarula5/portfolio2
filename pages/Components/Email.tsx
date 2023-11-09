@@ -34,10 +34,10 @@ const Email = () => {
     } else {
       emailjs
         .sendForm(
-          "service_6a7nokb",
-          "template_r29gwxa",
+          "service_dt44vch",
+          "template_alquazl",
           "#form",
-          "user_ekTuU822CTjP5kfqrKB7O"
+          "G44OJGfr55eyhm4sM"
         )
         .then(
           (result) => {
@@ -115,7 +115,7 @@ const Email = () => {
             </div>
           </div>
           <button
-            className="btn" style={{ backgroundColor: "#3a3939", color: "white" }}
+            className="btn text-white"
             onClick={(e) => sendEmail({ e })}
           >
             Send

@@ -10,47 +10,51 @@ import m4 from "/display/movie-4.jpg";
 import m5 from "/display/movie-5.jpg";
 import m6 from "/display/movie-6.jpg";
 import m7 from "/display/movie-7.jpg";
+import movie1 from "/display/movie1.png";
+
+import { BsGithub } from "react-icons/bs";
+import Techbadge from "../Techbadge";
 
 const Movies = () => {
   const [show, setShow] = useState(false);
   const [on, setOn] = useState<Boolean>(false);
+  const githubLink = "https://github.com/anshnarula5/movies"
   return (
-    <div
-      className="projectCard py-3 px-4 mb-3"
-      onClick={() => {
-        if (!on) {
-          setShow(true);
-          setOn(true);
-        }
-      }}
-    >
-      <div
-        className="d-flex justify-content-between align-items-center"
-        onClick={() => {
-          setShow(false);
-          setOn(false);
-        }}
-      >
-        <p>Mobile</p>
-        <p
-          onClick={() => {
-            setShow(false);
-            setOn(false);
-          }}
-          className="fs-3"
-        >
-          {show && <i className="fa-solid fa-xmark"></i>}
-        </p>
+    <Row className="projectCard py-3 px-2 mb-3">
+    <Col md={3} className="">
+      <Image src={movie1} className="d-block w-100 moviesImage" alt="..." priority={true}/>
+    </Col>
+    <Col md={9} className="">
+      <div className="d-flex align-items-center justify-content-between">
+        <h4>
+          <a href={githubLink} target="__blank" className="cardHeading d-flex align-items-center">
+            <span>Cinepedia</span>
+            <i className="fas fa-external-link-alt openIcon"></i>
+          </a>
+        </h4>
+        <span>
+          <a href={githubLink} className="brightText " target="__blank">
+            <BsGithub size={30} />
+          </a>
+        </span>
       </div>
-      <h2>Cinepedia</h2>
       <p className="secondaryText">
-        This movie browsing mobile application offers an extensive collection of films across various genres.
+      This movie browsing mobile application offers an extensive collection of films across various genres.
+        <p
+          className="brightText d-inline toggleCollapse"
+          onClick={() => {
+            setShow(!show);
+          }}
+        >
+          {show ? " Show less" : " Show more"}
+        </p>
       </p>
-      <Collapse in={show}>
-        <div>
+    </Col>
+    <Collapse in={show}>
+        <div className="my-2">
           <Row id="example-collapse-text">
             <Col md={6}>
-              <p className="secondaryText">
+              <p className="secondaryText pt-4">
                 Implemented robust search functionality, including search history for
                 quick access to previous searches.
                 Designed and implemented a rating system, enabling users to rate movies and share their feedback through
@@ -122,10 +126,9 @@ const Movies = () => {
               </Carousel>
             </Col>
           </Row>
-          <CButton name="Github" url="https://github.com/anshnarula5/movies" />
         </div>
       </Collapse>
-    </div>
+  </Row>
   );
 };
 

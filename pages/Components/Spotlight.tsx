@@ -17,7 +17,7 @@ const Spotlight = () => {
     <div className='spotlight-container'>
       <div
         className="spotlight"
-        style={{ left: position.x - 300, top: position.y - 300 }}
+        style={{ left: position.x - 500, top: position.y - 425 }}
       />
     </div>
   );

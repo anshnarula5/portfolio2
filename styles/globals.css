@@ -3,6 +3,7 @@
   --primary-text: #ffffff;
   --card-hover : rgba(139, 161, 203, 0.15);
   --secondary-text : #b3bbcd;
+  --bright-text : #7ff2f2;
 }
 
 html,
@@ -39,7 +40,7 @@ a {
 }
 
 .projectCard {
-  border-left: .1rem solid #354557;
+  /* border-left: .1rem solid #354557; */
   background-color: transparent;
   height: 100%;
   border-radius: 0;
@@ -49,7 +50,6 @@ a {
 }
 .projectCard:hover {
   background-color: var(--card-hover);
-  cursor: pointer;
   box-shadow: black;
   transition: all linear .15s;
   opacity: 100%;
@@ -176,6 +176,7 @@ a {
 .gradient {
   background: rgb(54, 66, 91);
   background: linear-gradient(0deg, #1d2130 0%, transparent 100%);
+  z-index: -100;
   height: 2rem;
 }
 /* 
@@ -225,7 +226,7 @@ hr{
     opacity: 100%;
   }
   .techCard {
-    width: 23%;
+    width: 30%;
     padding: 1rem;
     font-size:  smaller;
   }
@@ -271,12 +272,59 @@ h3{
 
 .spotlight {
   position: fixed;
-  width: 40rem;
-  height: 40rem;
+  width: 50em;
+  height: 50rem;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(51, 75, 128, 0.8) 12%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(30, 46, 141, 0.8) 12%, rgba(255, 255, 255, 0) 70%);
+  /* background-color: pink; */
   pointer-events: none;
   z-index: 1;
   mix-blend-mode: screen;
   opacity: 15%;
+}
+.icon{
+  background-color: var(--primary);
+}
+
+/* .parallax-effect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  transform-style: preserve-3d;
+
+}
+.inner-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-style: italic;
+  transform: translateZ(60px);
+} */
+
+.cardHeading{
+  text-decoration: none;
+  color: white;
+  transition: all linear .2s;
+}
+.cardHeading:hover{
+  text-decoration: none;
+  color: var(--bright-text);
+}
+.openIcon{
+  font-size: 1.2rem;
+  margin-inline: 0.5rem;
+}
+.brightText{
+  color: var(--bright-text)
+}
+.brightText:hover{
+  color: var(--bright-text)
+}
+.toggleCollapse{
+  cursor: pointer;
 }

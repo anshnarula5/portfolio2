@@ -13,11 +13,11 @@ const Career = () => {
   return (
     <div>
       <div className=" pt-5 career_web">
-        <div className=" d-flex  justify-content-start ">
+        <div className="d-flex  justify-content-start ">
           <Timeline position="left">
             <TimelineItem >
-              <TimelineOppositeContent sx={{ flex: 20 }} >
-                <div className="careerCard  px-4 mb-3  pt-3">
+              <TimelineOppositeContent sx={{ flex: 20}}  className="">
+                <div className="careerCard  px-4 mb-3 py-2 ">
                   <div className="d-flex justify-content-between align-items-center">
                     <h2>Amazon</h2>
                     <span className=" secondaryText">SDE Intern</span>
@@ -36,11 +36,11 @@ const Career = () => {
                   </p>
                 </div>
               </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
+              <TimelineSeparator className=" pt-2">
+                <TimelineDot className="icon"><i className="fab fa-amazon fa-lg"></i></TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent>2023</TimelineContent>
+              <TimelineContent className="pt-2"><span className="secondaryText px-2  ">2023</span></TimelineContent>
             </TimelineItem>
             <TimelineItem >
               <TimelineOppositeContent sx={{ flex: 20 }} >
@@ -64,12 +64,12 @@ const Career = () => {
                   </p>
                 </div>
               </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
+              <TimelineSeparator  className=" py-2">
+                <TimelineDot className="icon pt-3"><i className="fa-regular fa-building fa-lg"></i></TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent> 2022
-              </TimelineContent>
+              <TimelineContent className="pt-4"><span className="secondaryText px-2  ">2022</span></TimelineContent>
+
             </TimelineItem>
 
           </Timeline>
@@ -80,7 +80,7 @@ const Career = () => {
       <div className="careerCard py-3 px-4 my-3 career_mobile">
         <div className="d-flex justify-content-between align-items-center">
           <p>SDE Intern</p>
-          <span className="blockquote-footer secondaryText">Jan 2023 - Jun 2023</span>
+          <p className="blockquote-footer secondaryText">Jan 2023 - Jun 2023</p>
         </div>
         <h2>Amazon</h2>
         <p className="secondaryText pt-2">
