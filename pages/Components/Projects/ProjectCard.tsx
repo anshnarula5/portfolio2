@@ -42,7 +42,7 @@ const ProjectCard = ({ imageSrc, projectName, githubLink, liveLink, summary, des
           <div>
             <div id="example-collapse-text">
               <Carousel variant="dark" className="px-2 py-2">
-                {images.map((image : any, index : any) => (
+                {images && images.length > 0 && images.map((image : any, index : any) => (
                   <Carousel.Item key={index}>
                     <Image src={image} className="d-block w-100" alt="..." priority={true} />
                   </Carousel.Item>
