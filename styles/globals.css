@@ -117,6 +117,16 @@ a {
   color: white;
 }
 
+.link2 {
+  color: white;
+  text-decoration: none;
+  transition: all linear .15s;
+}
+
+.link2:hover {
+  color: var(--bright-text);
+}
+
 .active {
   color: white;
   font-size: x-large;
@@ -260,10 +270,10 @@ h3{
 
 .techbadge{
   display: block;
-  margin-right: 1rem;
+  margin-right: 0.8rem;
   background-color: #26476a;
-  border-radius: 10%;
   color: #7ff2f2;
+  font-size: 0.85rem;
 }
 
 /* Spotlight.css */
