@@ -2,6 +2,8 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 // Importing the Google Analytics Measurement ID from the environment variable
 const NEXT_PUBLIC_GA_ID ="G-FRH6AH1D9Z"
 const gtag = `https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GA_ID}`;
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 export default class MyDocument extends Document {
     render() {
     return (
@@ -24,6 +26,7 @@ export default class MyDocument extends Document {
         </Head>
         <body>
           <Main />
+          <SpeedInsights />
           <NextScript />
         </body>
       </Html>

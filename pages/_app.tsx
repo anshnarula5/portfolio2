@@ -4,7 +4,6 @@ import { AppProps } from "next/app";
 import Script from "next/script";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
 const NEXT_PUBLIC_GA_ID ="G-FRH6AH1D9Z"
@@ -58,7 +57,6 @@ const NEXT_PUBLIC_GA_ID ="G-FRH6AH1D9Z"
       
       </Head>
       <Component {...pageProps} />
-      <SpeedInsights />
     </>
   );
 }
